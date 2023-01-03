@@ -47,7 +47,7 @@ namespace NotesApp1.Services
             if (mySqlDataReader.Read())
             {
                 noteItem.Id = mySqlDataReader.GetInt32("Id");
-                noteItem.NoteUser.Id = mySqlDataReader.GetGuid("UserId");
+                noteItem.NoteUser.Id = mySqlDataReader.GetGuid("NoteUserId");
                 noteItem.Title = mySqlDataReader.GetString("Title");
                 noteItem.Image = mySqlDataReader.GetString("Image");
                 noteItem.Description = mySqlDataReader.GetString("Description");
